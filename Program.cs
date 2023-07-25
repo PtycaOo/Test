@@ -2,7 +2,7 @@
 
 String[] GetMassiv(){
 String? s = Console.ReadLine();
-    String[] OriginMassiv = s.Split(',');
+    String[] OriginMassiv = s!.Split(',');
     return OriginMassiv;
 }
 
@@ -31,4 +31,4 @@ return arr;
 String[] Origin = GetMassiv();
 int size = number_new_massive(Origin);
 String[] Finish_massive = New_massiv(size, Origin);
-Console.WriteLine(string.Join(",",Finish_massive));
+Console.WriteLine(string.Join(" | ",Finish_massive));
